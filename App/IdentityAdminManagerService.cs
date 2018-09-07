@@ -13,6 +13,12 @@ namespace App
 
         }
 
+        public IdentityAdminManagerService(string con, string schema)
+            : base(con, schema)
+        {
+
+        }
+
         public IdentityAdminManagerService(string con)
             : base(con)
         {

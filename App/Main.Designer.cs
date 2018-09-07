@@ -32,6 +32,11 @@
             this.startButton = new System.Windows.Forms.Button();
             this.conTextBox = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
+            this.schemaTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.portTxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startButton
@@ -46,9 +51,9 @@
             // 
             // conTextBox
             // 
-            this.conTextBox.Location = new System.Drawing.Point(12, 12);
+            this.conTextBox.Location = new System.Drawing.Point(119, 12);
             this.conTextBox.Name = "conTextBox";
-            this.conTextBox.Size = new System.Drawing.Size(483, 20);
+            this.conTextBox.Size = new System.Drawing.Size(376, 20);
             this.conTextBox.TabIndex = 1;
             // 
             // browseButton
@@ -61,11 +66,57 @@
             this.browseButton.UseVisualStyleBackColor = true;
             this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
             // 
+            // schemaTxt
+            // 
+            this.schemaTxt.Location = new System.Drawing.Point(119, 40);
+            this.schemaTxt.Name = "schemaTxt";
+            this.schemaTxt.Size = new System.Drawing.Size(100, 20);
+            this.schemaTxt.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Schema";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Port number";
+            // 
+            // portTxt
+            // 
+            this.portTxt.Location = new System.Drawing.Point(119, 68);
+            this.portTxt.Name = "portTxt";
+            this.portTxt.Size = new System.Drawing.Size(100, 20);
+            this.portTxt.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Connection string";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 57);
+            this.ClientSize = new System.Drawing.Size(670, 104);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.portTxt);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.schemaTxt);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.conTextBox);
             this.Controls.Add(this.startButton);
@@ -86,5 +137,10 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.TextBox conTextBox;
         private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.TextBox schemaTxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox portTxt;
+        private System.Windows.Forms.Label label3;
     }
 }
